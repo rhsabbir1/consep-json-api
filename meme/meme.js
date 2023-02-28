@@ -9,9 +9,12 @@ const showMems = (data)=>{
        const creat = document.createElement('div')
        creat.classList.add('memes')
        creat.innerHTML =`
-       
-       
-       `
+        <img src="${image.url}" alt="">
+       <h1>Name :${image.author} </h1>
+       <h3>Title : ${image.title}</h3>
+       `;
+       console.log(image)
+       container.appendChild(creat)
     });
 }
 loadMemeData()
